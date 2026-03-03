@@ -46,3 +46,4 @@ clean:
 	@rm -rf bin/*
 	@rm -rf $(DEBDIR)
 	@rm -f $(DEBPKG)
+	@rm -rf *.deb
