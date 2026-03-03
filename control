@@ -1,0 +1,6 @@
+Package: lyzrad-rcon
+Version: 1.0.0
+Architecture: amd64
+Maintainer: Quentin DUTEIL <quentinduteil@xalystudio.fr>
+Depends: libmysqlcppconn7t64, libmariadb3, libssl3, libzstd1, libstdc++6, zlib1g
+Description: RCON Minecraft whitelist sync for Lyzrad
