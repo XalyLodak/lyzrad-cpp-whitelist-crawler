@@ -1,5 +1,5 @@
 minecraft-server/
-lyzrad-cpp/
+lyzrad-rcon/
 bin/
 
 *.deb
