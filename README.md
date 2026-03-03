@@ -56,7 +56,7 @@ lyzrad-rcon
 
 ## License
 
-This project is licensed under the GNU GPLv3 License, it is a French Free Software, you can use it, modify it and distribute it as you wish, but you must keep the same license and give credit to the original author. See the LICENSE file for more details.
+This project is licensed under the [GNU GPLv3 License](/LICENSE), it is a French Free Software, you can use it, modify it and distribute it as you wish, but you must keep the same license and give credit to the original author. See the LICENSE file for more details.
 
 ## Contributing
 
