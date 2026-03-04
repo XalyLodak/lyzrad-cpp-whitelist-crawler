@@ -3,9 +3,9 @@
 
 #include "db.hpp"
 
-Database::Database(const std::string& host, const std::string& user,
+Database::Database(const std::string& host, int port, const std::string& user,
                    const std::string& password, const std::string& dbname)
-    : host(host), user(user), password(password), dbname(dbname),
+    : host(host), port(port), user(user), password(password), dbname(dbname),
       driver(nullptr), con(nullptr) {}
 
 Database::~Database() {
@@ -15,7 +15,7 @@ Database::~Database() {
 bool Database::connect() {
     try {
         driver = sql::mysql::get_driver_instance();
-        con = driver->connect("tcp://" + host + ":3306", user, password);
+        con = driver->connect("tcp://" + host + ":" + std::to_string(port), user, password);
         con->setSchema(dbname);
         std::cout << "Connecté à la base de données.\n";
         return true;

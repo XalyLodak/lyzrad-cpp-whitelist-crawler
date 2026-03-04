@@ -31,7 +31,7 @@ CONSIDER TO USE SSH OR VPN TUNNEL /!\
     int port = 25575;
     string password = "Bonjour";
 
-    Database db("localhost", "user", "password", "db");
+    Database db("localhost", 3306, "user", "password", "db");
     if (!db.connect()) {
         cerr << "Impossible de se connecter à la base de données.\n";
         return 1;

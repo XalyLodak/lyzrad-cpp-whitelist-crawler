@@ -15,7 +15,7 @@ struct Player {
 
 class Database {
 public:
-    Database(const std::string& host, const std::string& user,
+    Database(const std::string& host, int port, const std::string& user,
              const std::string& password, const std::string& dbname);
     ~Database();
 
@@ -26,7 +26,9 @@ public:
     std::vector<Player> getPlayers();
 
 private:
-    std::string host, user, password, dbname;
+    std::string host;
+    int port;
+    std::string user, password, dbname;
     sql::mysql::MySQL_Driver* driver;
     sql::Connection* con;
 };
